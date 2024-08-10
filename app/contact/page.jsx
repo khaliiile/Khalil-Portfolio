@@ -1,10 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import { Input } from "@/components/ui/input";
-<<<<<<< HEAD
-=======
-import { Textarea } from "@/components/ui/textarea";
->>>>>>> c02e956f4660735108214f9b5e298eb7eded86e2
 import { Button } from "@/components/ui/button";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
