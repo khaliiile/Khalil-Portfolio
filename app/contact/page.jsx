@@ -84,7 +84,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] sm:h-[540px] rounded-[22px]">
                 <h3 className="text-2xl text-accent">Wanna Work Together</h3>
                 <p className="text-white-50">Let's connect! Fill out this form</p>
-                <div className="grid grid-cols-1 md:grid-cols-1 gap-2">
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-2 text-primary ">
                   <input
                       id="fullName"
                       className="h-[45px] p-4 mt-2 w-full rounded-lg border-gray-200 align-top shadow-sm sm:text-sm"
