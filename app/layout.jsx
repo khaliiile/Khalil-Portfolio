@@ -3,7 +3,7 @@ import { JetBrains_Mono } from 'next/font/google';
 import "./globals.css";
 import Header from "@/components/Header";
 import { SpeedInsights } from '@vercel/speed-insights/next';
- 
+import { Analytics } from '@vercel/analytics/react';
 
 const jetbrainsMono = JetBrains_Mono({
     subsets: ['latin'],
@@ -20,9 +20,12 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
         <body className={jetbrainsMono.variable}>
-        <Header />
-        {children}
-        <SpeedInsights />
+       <main>
+           <Header />
+           {children}
+           <SpeedInsights />
+           <Analytics />
+       </main>
         </body>
         </html>
     );

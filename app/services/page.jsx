@@ -8,25 +8,25 @@ const services = [
         num: "01",
         title: "Frontend Development",
         desc: "Crafting responsive and interactive interfaces using React.js, Next.js, and modern JavaScript frameworks.",
-        href: "/frontend",
+
     },
     {
         num: "02",
         title: "Backend Development",
         desc: "Building robust and scalable server-side applications with Node.js, Express.js, and database integration.",
-        href: "/backend",
+
     },
     {
         num: "03",
         title: "Database Management",
         desc: "Designing, optimizing, and managing databases using MySQL, MongoDB, and other database systems.",
-        href: "/database",
+
     },
     {
         num: "04",
         title: "DevOps & Cloud",
         desc: "Implementing CI/CD pipelines, containerization, and cloud deployment using Docker, Kubernetes, and AWS.",
-        href: "/devops",
+
     }
 ];
 
@@ -42,13 +42,13 @@ const Items = () => {
                     {services.map((service, index) => (
                         <div key={index} className="flex-1 flex flex-col justify-center gap-6 group">
                             <div className="w-full flex justify-between items-center">
-                                <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500 cursor-pointer">
+                                <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500 ">
                                     {service.num}
                                 </div>
                                 <Link
-                                    href={service.href}
-                                    className="w-[60px] h-[60px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-90 cursor-pointer"
+                                    className="w-[60px] h-[60px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-90 cursor-none"
                                     aria-label={`Learn more about ${service.title}`}
+                                    href='#'
                                 >
                                     <BsArrowDownRight className="text-primary text-2xl" />
                                 </Link>

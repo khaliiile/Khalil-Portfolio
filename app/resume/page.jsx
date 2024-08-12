@@ -61,12 +61,12 @@ const education = {
     description: "A summary of my academic background",
     items: [
         {
-            institution: "Jaber Iben Hyan   ", // Replace with your high school's name
-            degree: "Baccalaureate Degree physical science", // Use the appropriate degree name for your Bac
+            institution: "Jaber Iben Hyan   ", 
+            degree: "Baccalaureate Degree physical science", 
             duration: "2021",
         },
         {
-            institution: "Specialized Institute of Applied Technology Sala Aljadida", // Replace with your institution's name
+            institution: "Specialized Institute of Applied Technology Sala Aljadida", 
             degree: "  Digital Development with Full Stack Web Option",
             duration: "2023",
         },
@@ -140,7 +140,7 @@ const resume = () => {
                                         {experience.items.map((item, index) => (
                                             <li
                                                 key={index}
-                                                className="bg-[#232329]  h-[215px] rounded-xl flex flex-col items-start justify-between px-6 py-4 shadow-md transition-all duration-200 ease-in-out hover:scale-105 cursor-cell"
+                                                className="bg-[#232329]  h-[215px] rounded-xl flex flex-col items-start justify-between px-6 py-4 shadow-md transition-all duration-200 ease-in-out hover:scale-105 cursor-none"
                                             >
                                                 <div>
                                                     <h3 className="text-lg font-medium text-accent ">{item.position}</h3>
@@ -162,7 +162,7 @@ const resume = () => {
                                         {education.items.map((item, index) => (
                                             <li
                                                 key={index}
-                                                className="bg-[#232329]      h-[215px] rounded-xl flex flex-col items-start justify-between px-6 py-4 shadow-md transition-all duration-200 ease-in-out hover:scale-105 cursor-cell"
+                                                className="bg-[#232329]      h-[215px] rounded-xl flex flex-col items-start justify-between px-6 py-4 shadow-md transition-all duration-200 ease-in-out hover:scale-105 cursor-none"
                                             >
                                                 <div>
                                                     <h3 className="text-lg font-medium text-accent mt-2 ">{item.degree}</h3>
